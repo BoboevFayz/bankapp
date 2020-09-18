@@ -16,7 +16,7 @@ package types
 
  type Card struct {
 	 ID int
-	 PAN PAN
+	 PAN string
 	 Balance Money
 	 MinBalance Money
 	 Currency Currency
@@ -28,4 +28,10 @@ package types
  type Payment struct{
 	 ID int
 	 Amount Money
+ }
+
+ type PaymentSource struct{
+	 Type string
+	 Number string
+	 Balance Money
  }
